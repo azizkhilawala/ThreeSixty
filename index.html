@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>360 Image</title>
+	<link rel="stylesheet" type="text/css" href="style-assests/style.css">
+</head>
+<body>
+
+<section>
+	<article>Scroll through the image</article>
+	<img src="image-assests/small/img1-small.jpg" id="mousemove"/>
+	<article>This is set to auto scroll</article>
+	<img src="image-assests/small/img1-small.jpg" id="auto"/>
+	<article>Click and move</article>
+	<img src="image-assests/small/img1-small.jpg" id="click"/>
+</section>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="script-assests/threeSixty.js"></script>
+<script type="text/javascript">
+$(function() {
+
+	//images array
+	var arr = [];
+	
+	//looping each image
+	for (var x=1; x<=19; x++)
+		arr.push("image-assests/small/img"+x+"-small.jpg");
+	
+	//magic happens here
+	$("#mousemove").threesixty({images:arr, method:'mousemove', 'cycle':3, direction: 'forward'});
+	$("#auto").threesixty({images:arr, method:'auto', autoscrollspeed:200});
+	$("#click").threesixty({images:arr, method:'click', 'cycle':1 , direction:'forward',sensibility:1});
+});
+
+</script>
+</body>
+</html>

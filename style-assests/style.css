@@ -1,0 +1,24 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+section{
+	margin: 0.625em auto;
+}
+
+div{
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+article{
+	margin-top: 0.625em auto;
+	text-align: center;
+	font-family: Helvetica,sans-serif;
+}
+
+img{
+	margin: 0.625em auto;
+	max-width: 100% !important;
+}

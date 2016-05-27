@@ -1,0 +1,16 @@
+{
+  "name": "360image",
+  "version": "0.1.0",
+  "description": "360 degree image rotation experiment",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-responsive-images": "^0.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aziz Khilawala",
+  "license": "ISC"
+}
